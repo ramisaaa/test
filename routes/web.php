@@ -24,8 +24,6 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
-Route::resource('provinces', \App\Http\Controllers\ProvinceController::class);
+Route::resource('users', \App\Http\Controllers\UserController::class);
 
-Route::resource('cities', \App\Http\Controllers\CityController::class);
 
-Route::resource('companies', \App\Http\Controllers\CompanyController::class);
